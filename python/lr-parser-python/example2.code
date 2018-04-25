@@ -1,0 +1,6 @@
+while (a3+15)>0xa do
+    if x2 = 07 then 
+	x2 = 8
+    else 
+	x2 = 9;
+c=b*c+d;

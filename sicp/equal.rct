@@ -1,0 +1,10 @@
+#lang racket
+(define (equal? seq1 seq2)
+  (if (pair? seq1)
+      (if (not (pair? seq2))
+          #f
+          (and (equal? (car seq1) (car seq2))
+               (equal? (cdr seq1) (cdr seq2))))
+      (if (pair? seq2)
+          #f
+          (eq? seq1 seq2))))
